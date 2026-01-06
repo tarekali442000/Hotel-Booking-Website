@@ -6,8 +6,8 @@ const HotelCard = ({room, index}) => {
   return (
     <>
     <Link to={"/rooms/" + room._id} onClick={()=> scrollTo(0,0)} key={room._id}>
-        <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-82 mt-20">
-        <div class="relative h-56 m-0 overflow-hidden text-white rounded-xl">
+        <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-xl w-82 mt-10">
+        <div class="relative h-52 m-0 overflow-hidden text-white rounded-t-xl">
             <img src={room.images[0]} alt="card-image" className='w-100'/>
             {index % 2 === 0 && (
   <p className="px-3 py-1 absolute top-3 left-3 text-xs bg-white text-gray-800 font-medium rounded-full">
@@ -41,7 +41,7 @@ const HotelCard = ({room, index}) => {
         </div>
         <div class="flex items-center justify-between m-4">
             <p className='text-gray-500'><span className='text-xl text-gray-800'>${room.pricePerNight}</span>/night</p>
-            <button class=" rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-gray-800 hover:cursor-pointer active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+            <button className="px-4 py-2 text-sm font-medium border border-gray-300 rounded hover:bg-gray-50 transition-all cursor-pointer" type="button">
             Book Now
             </button>
         </div>

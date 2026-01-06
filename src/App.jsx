@@ -8,7 +8,7 @@ function App() {
   const isOwnerPath = useLocation().pathname.includes('owner');
   return (
     <div>
-      {! isOwnerPath &&<Navbar/>}
+      {!isOwnerPath && <Navbar/>}
       <div className='min-h-[70vh]'>
         <Routes>
           <Route path='/' element={<Home/>} />
