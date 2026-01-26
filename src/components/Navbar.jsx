@@ -67,7 +67,7 @@ return (
                     <UserButton.Action label="My Booking" labelIcon={<BookIcon/>} onClick={() =>navigate('my-bookings')}/>
                 </UserButton.MenuItems>
             </UserButton>) : (
-                <button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${!isHomePath || isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
+                <button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 cursor-pointer transition-all duration-500 ${!isHomePath || isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
                 Login
             </button>
             )}
