@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import FeaturedDestinatin from '../components/FeaturedDestinatin'
 import ExclusiveOffer from '../components/ExclusiveOffer'
 import Testmonial from '../components/Testmonial'
-import NewsLetter from '../components/Newsletter'
+import Newsletter from '../components/Newsletter'
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
       <FeaturedDestinatin />
       <ExclusiveOffer />
       <Testmonial />
-      <NewsLetter/>
+      <Newsletter />
 
     </>
   )
